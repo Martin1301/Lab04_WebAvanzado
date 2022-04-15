@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - SocketIO</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+
+  <!-- Page title -->
+  <title>CHAT SOCKER IO</title>
+
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="vendor/animate.css/animate.css"/>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" href="vendor/toastr/toastr.min.css"/>
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="styles/pe-icons/pe-icon-7-stroke.css"/>
+  <link rel="stylesheet" href="styles/pe-icons/helper.css"/>
+  <link rel="stylesheet" href="styles/stroke-icons/style.css"/>
+  <link rel="stylesheet" href="styles/style.css">
+
+<style> 
+  ul {list-style-type: none; margin: 0; padding: 0;  }
+  ul > li {padding: 0.5rem 1rem;}
+  ul > li:nth-child(odd){text-align: right; font-style: italic;}
+</style>
+</head>
+<body class="blank">
+
+  <body>
+    <!-- Wrapper-->
+<div class="wrapper">
+  <section class="content">
+      <div class="container-fluid md animated slideInDown">
+
+          <div class="view-header">
+          <div class="header-icon">
+              <i class="pe page-header-icon pe-7s-shield"></i>
+          </div>
+          <div class="header-title">
+              <h3>Chat con socket.io</h3>
+          <small>
+              y NodeJS
+          </small>
+          </div>
+      </div> 
+      <div class="panel panel-filled container">
+      <div class="panel-body">
+      <div class=" col-md-4 my-auto">
+      <div class="table-responsive">
+
+          <form id="noteForm" >
+              <div class="form-group">
+                  <label class="control-label" for="mensaje">Autor</label><br>
+                  <input type="text" placeholder="Ingrese el autor" required  id="title" type="text" name="message" autofocus pattern="[A-Za-z]+">
+                  <span class="help-block small">Escriba el nombre</span>
+                  <label class="control-label" for="mensaje">Mensaje</label><br>
+                  <input type="text" placeholder="Ingrese el mensaje" required name="description" id="description">
+                  <span class="help-block small">Escriba un mensaje</span>
+              </div>
+              <div>
+              <button id="send" type="submit" class="btn btn-accent" onclick="enviar()">Enviar mensaje</button>
+              </div>
+          </form>
+          </div>
+          </div>
+          <div class="col-md-8 " id="notes">
+          
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+  </section>
+
+  </div>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="vendor/pacejs/pace.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.ja"></script>
+  <script src="scripts/luna.js"></script>
+    <script src="./ui.js"></script>
+    <script src="/sockets.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
